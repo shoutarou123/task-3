@@ -5,7 +5,7 @@
 
 a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 a:hover {
@@ -43,7 +43,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .kv_content p {
@@ -57,6 +57,7 @@ header {
 }
 
 .service_content {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 
@@ -83,6 +84,30 @@ header {
   text-align: center;
 }
 
+.web:hover {
+  background-color: rgb(30, 168, 210);
+}
+
+.seo:hover {
+  background-color: chocolate;
+}
+
+.mobile:hover {
+  background-color: rgb(64, 199, 86);
+}
+
+.web.service_btn.active {
+  background-color: rgb(30, 168, 210);
+}
+
+.seo.service_btn.active {
+  background-color: chocolate;
+}
+
+.mobile.service_btn.active {
+  background-color: rgb(64, 199, 86);
+}
+
 @media screen and (max-width: 690px) {
   .header_content ul {
     width: 350px;
@@ -92,11 +117,18 @@ header {
     align-items: center;
     gap: 16px;
   }
+  .service_detail {
+    display: flex;
+    justify-content: center;
+  }
+  .service_detail p {
+    width: 240px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .kv_content p {
-    font-size: 40px
+    font-size: 40px;
   }
 }
 
@@ -108,21 +140,25 @@ header {
 
 @media screen and (max-width: 450px) {
   .kv_content p {
-    font-size: 24px
+    font-size: 24px;
   }
 }
 
 /* ----------------------- */
 
-/* .service_detail {
+.service_detail {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
-   padding: 0 16px;
+  padding: 0 16px;
 }
 
 .service_detail p {
   border: solid 3px gray;
   margin: 0 8px;
-} */
+}
+
+.hidden {
+  display: none;
+}
