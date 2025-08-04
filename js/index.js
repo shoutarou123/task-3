@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     serviceBtns.forEach(btn => btn.classList.remove("active"));
     document.querySelector(".web.service_btn").classList.add("active");
+
+    if (!serviceContent.classList.contains("hidden")) {
+      serviceContent.scrollIntoView({ behavior: "smooth"});
+    }
   });
 
   serviceBtns.forEach((btn) => {
