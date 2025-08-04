@@ -43,7 +43,6 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* margin-bottom: 24px; */
 }
 
 .kv_content p {
@@ -82,30 +81,44 @@ header {
   margin: 0px 8px;
   width: 200px;
   text-align: center;
+  cursor: pointer;
 }
 
 .web:hover {
-  background-color: rgb(30, 168, 210);
-}
-
-.seo:hover {
-  background-color: chocolate;
-}
-
-.mobile:hover {
-  background-color: rgb(64, 199, 86);
+  background-color: #b3ffff;
 }
 
 .web.service_btn.active {
-  background-color: rgb(30, 168, 210);
+  background-color: #b3ffff;
+}
+
+.seo:hover {
+  background-color: #ffdea0;
 }
 
 .seo.service_btn.active {
-  background-color: chocolate;
+  background-color: #ffdea0;
+}
+
+.mobile:hover {
+  background-color: #a7ff99;
 }
 
 .mobile.service_btn.active {
-  background-color: rgb(64, 199, 86);
+  background-color: #a7ff99;
+}
+
+.service_detail {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  padding: 0 16px;
+}
+
+.service_detail p {
+  border: solid 3px gray;
+  margin: 0 8px;
 }
 
 @media screen and (max-width: 690px) {
@@ -142,21 +155,6 @@ header {
   .kv_content p {
     font-size: 24px;
   }
-}
-
-/* ----------------------- */
-
-.service_detail {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
-  padding: 0 16px;
-}
-
-.service_detail p {
-  border: solid 3px gray;
-  margin: 0 8px;
 }
 
 .hidden {
